@@ -52,7 +52,7 @@ def save_object(file_path: str, obj: object) -> None:
         logging.info("Exited the save_object method of MainUtils class")
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
-'''
+
 def load_object(file_path: str, ) -> object:
     try:
         if not os.path.exists(file_path):
@@ -75,7 +75,6 @@ def load_numpy_array_data(file_path: str) -> np.array:
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
     
-
 
 def evaluate_models(X_train, y_train,X_test,y_test,models,param):
     try:
@@ -107,5 +106,3 @@ def evaluate_models(X_train, y_train,X_test,y_test,models,param):
 
     except Exception as e:
         raise NetworkSecurityException(e, sys)
-
-'''
