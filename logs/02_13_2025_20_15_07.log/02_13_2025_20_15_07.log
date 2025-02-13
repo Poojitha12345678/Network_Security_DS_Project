@@ -1,0 +1,27 @@
+[2025-02-13 20:15:46,201] 20 INFO Initiate the data ingestion
+[2025-02-13 20:15:49,095] 62 INFO Performed train test split on the dataframe
+[2025-02-13 20:15:49,095] 64 INFO Exited split_data_as_train_test method of Data_Ingestion class
+[2025-02-13 20:15:49,095] 72 INFO Exporting train and test file path.
+[2025-02-13 20:15:49,157] 81 INFO Exported train and test file path.
+[2025-02-13 20:15:49,157] 22 INFO Data Initiation Completed
+[2025-02-13 20:15:49,218] 27 INFO Initiate the data Validation
+[2025-02-13 20:15:49,261] 32 INFO Required number of columns:2
+[2025-02-13 20:15:49,261] 33 INFO Data frame has columns:31
+[2025-02-13 20:15:49,262] 32 INFO Required number of columns:2
+[2025-02-13 20:15:49,262] 33 INFO Data frame has columns:31
+[2025-02-13 20:15:49,520] 29 INFO data Validation Completed
+[2025-02-13 20:15:49,520] 34 INFO Initiate the data Transformation
+[2025-02-13 20:15:49,521] 46 INFO Entered Initiate Data Transformation
+[2025-02-13 20:15:49,521] 48 INFO Starting data transformation
+[2025-02-13 20:15:49,538] 33 INFO entered get_data_transformer_object class
+[2025-02-13 20:15:49,538] 36 INFO Initiase KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-02-13 20:15:49,557] 48 INFO Entered the save_object method of MainUtils class
+[2025-02-13 20:15:49,600] 52 INFO Exited the save_object method of MainUtils class
+[2025-02-13 20:15:49,603] 36 INFO Data Transformation Completed
+[2025-02-13 20:15:49,603] 39 INFO Model Training stared
+[2025-02-13 20:20:16,374] 48 INFO Entered the save_object method of MainUtils class
+[2025-02-13 20:20:16,375] 52 INFO Exited the save_object method of MainUtils class
+[2025-02-13 20:20:16,376] 48 INFO Entered the save_object method of MainUtils class
+[2025-02-13 20:20:16,395] 52 INFO Exited the save_object method of MainUtils class
+[2025-02-13 20:20:16,395] 151 INFO Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\02_13_2025_20_15_18\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9915134370579916, precision_score=0.9911129064835387, recall_score=0.9919142914897918), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9915134370579916, precision_score=0.9911129064835387, recall_score=0.9919142914897918))
+[2025-02-13 20:20:16,397] 44 INFO Model Training artifact created

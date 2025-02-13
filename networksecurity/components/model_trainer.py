@@ -24,13 +24,13 @@ from sklearn.ensemble import (
 import mlflow
 from urllib.parse import urlparse
 
+
 '''
-
 import dagshub
-#dagshub.init(repo_owner='krishnaik06', repo_name='networksecurity', mlflow=True)
+#dagshub.init(repo_owner='Poojitha12345678', repo_name='Network_Security_DS_Project', mlflow=True)
 
-os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/krishnaik06/networksecurity.mlflow"
-os.environ["MLFLOW_TRACKING_USERNAME"]="krishnaik06"
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/Poojitha12345678/Network_Security_DS_Project.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="Poojitha12345678"
 os.environ["MLFLOW_TRACKING_PASSWORD"]="7104284f1bb44ece21e0e2adb4e36a250ae3251f"
 
 '''
@@ -46,8 +46,8 @@ class ModelTrainer:
             raise NetworkSecurityException(e,sys)
         
     def track_mlflow(self,best_model,classificationmetric):
-        #mlflow.set_registry_uri("https://dagshub.com/krishnaik06/networksecurity.mlflow")
-        #tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        # mlflow.set_registry_uri("https://dagshub.com/Poojitha12345678/Network_Security_DS_Project.mlflow")
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         with mlflow.start_run():
             f1_score=classificationmetric.f1_score
             precision_score=classificationmetric.precision_score

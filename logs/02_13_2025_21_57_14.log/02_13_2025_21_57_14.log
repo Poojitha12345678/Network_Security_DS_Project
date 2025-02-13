@@ -1,0 +1,5 @@
+[2025-02-13 21:57:19,595] 114 ERROR Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
